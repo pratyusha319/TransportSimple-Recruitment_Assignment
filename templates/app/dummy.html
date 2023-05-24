@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    {% block title %}
+       <title>Document</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Q.css' %}">
+
+</head>
+<body>
+
+    <video id="background-video" autoplay muted loop>
+        <source src="{% static 'videos/pi.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+    <center>
+
+        <h6>
+        <nav class="nav" >
+            <a href="{% url 'admin:index' %}" class="nav-link">Admin-Page</a>
+            <a href="{% url 'registration' %}" class="nav-link">Registration</a>
+            <a href="{% url 'QuestionList' %}" class="nav-link">Home-Page</a>
+            {% if user.is_authenticated %}
+                 <a href="{% url 'answer_question' %}"class="nav-link">Answer The Question</a>
+                 
+                 <a href="{% url 'user_logout' %}" class="nav-link">User_Logout</a>
+                 <a href="{% url 'ask_question' %}"class="nav-link">AskQuestion</a>
+            {% else %} 
+                 <a href="{% url 'user_login' %}" class="nav-link">User_Login</a>
+            {% endif %}
+        </nav>
+    </h6>
+        
+    </center>
+
+
+    <link rel="stylesheet" href="{% static 'js/bootstrap.bundle.js' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.bundle.min.js' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.js' %}">
+    <link rel="stylesheet" href="{% static 'js/bootstrap.min.js' %}">
+    {% block body_block %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,53 @@
+{% extends 'app/dummy.html' %}
+
+{% block title %}
+    <title>Home Page</title>
+{% endblock %}
+
+{% block body_block  %}
+<center>
+
+<u><h2 style="color: white;"> {{Qcl.title}} </h2><br></u>
+
+
+
+
+<table border="1px">
+    <tr>
+        <th>answer</th>
+        <th>answered by</th>
+        <th>answered on</th>
+        <th>click to like</th>
+        <th>liked By</th>
+    </tr >
+    {% for i in Qcl.question.all %}
+
+        <tr>
+        <td> {{i.description}}</td>
+        <td> {{i.user}}</td>
+       
+        <td>{{i.created_at}}</td>
+        
+     
+        <td><form action="{% url 'like_post' %}" method="POST" class="ui form"  >
+            {% csrf_token %}
+            <input  type="checkbox" name="cb" id="cb" value="{{i.pk}}" >
+            <input type="submit" value="Like" style="background-color: white;">
+        </form></td>
+        <td>
+            {% for j in i.likes.all %}
+                <b>{{j.user}}</b>
+            {% endfor %}
+        </td>
+        </tr>
+
+     {% endfor %}
+
+</table>
+
+</center>
+
+
+
+
+{% endblock %}

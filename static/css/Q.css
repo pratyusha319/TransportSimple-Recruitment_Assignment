@@ -1,0 +1,243 @@
+nav{
+	background-color:rgb(216, 211, 211);
+    height: 17%;
+	padding: 5px;
+	
+	border:2px solid black;
+	
+  
+}
+a{
+    color: black;
+    /* font-weight: normal; */
+}
+a:hover
+{
+	box-shadow: 20px  5px 20px black;
+	cursor:pointer;
+	color: gray;
+}
+.A{
+    color: white;
+}
+#a {
+    border-top-left-radius: 7px;
+    border-top-right-radius:7px;
+	color: black;
+}
+#reg1
+{
+    
+	background: transparent;
+	color:white;
+	width: 350px;
+	/* padding:25px; */
+	margin: 130px auto;
+	height: 400px;
+	outline: none;
+	border: 2px solid rgb(216, 211, 211); 
+    border-radius: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+
+textarea
+{
+	width: 90%;
+    height:30px;
+    padding: 5px;
+    font-size:13px ;
+    color:white;
+    border: none;
+    border-bottom: 3px solid white;
+     background: transparent; 
+     outline: none;
+}
+
+.form-group input[type="submit"]
+{
+	
+	background-color:rgb(216, 211, 211);
+	border: none;
+	outline: none;
+	padding: 6px 30px;
+	width: 115px;
+	color: black;
+	margin-top: 10px;
+	border-radius: 10px 0px 10px 0px;
+}
+.form-group input[type="submit"]:hover
+{
+	box-shadow: 0px 0px 6px 6px rgb(216, 211, 211);
+    border-radius: 5px;
+	cursor:pointer;
+    border: 6px orange;
+    background-color: rgb(26, 27, 25);
+    color: white;
+
+}
+#reg2
+{
+    
+	background: transparent;
+	color:white;
+	width: 350px;
+	padding:20px;
+	margin: 130px auto;
+	height: 400px;
+	outline: none;
+	border: none;
+}
+.form-group1 input[type="text"]
+{
+	width: 280px;
+    height:30px;
+    padding: 25px;
+    font-size:13px ;
+    color:white;
+    border: none;
+    border-bottom: 3px solid white;
+     background: transparent; 
+     outline: none;
+}
+
+.form-group1 input[type="password"],
+
+
+textarea
+{
+	width: 280px;
+    height:30px;
+    padding:45px;
+    font-size:13px ;
+    color:white;
+    border: none;
+    border-bottom: 3px solid white;
+     background: transparent; 
+     outline: none;
+}
+
+.form-group1 input[type="submit"]
+{
+	
+	background-color:rgb(216, 211, 211);
+	border: none;
+	outline: none;
+	padding: 6px 30px;
+	width: 115px;
+	color: black;
+	margin-top: 10px;
+	border-radius: 10px 0px 10px 0px;
+}
+.form-group1 input[type="submit"]:hover
+{
+	box-shadow: 10px 0px 20px white;
+	cursor:pointer;
+
+}
+select
+{
+    width: auto;
+    size: "5";
+    
+    
+    background-color: white;
+}
+.form-group2 input[type="text"]
+{
+	width: 280px;
+    height:30px;
+    padding: 25px;
+    font-size:13px ;
+    color:white;
+    border: none;
+    border-bottom: 3px solid white;
+     background: transparent; 
+     outline: none;
+}
+
+.form-group2 input[type="password"],
+
+
+textarea
+{
+	width: 205%;
+    height:30px;
+    padding:45px;
+    font-size:13px ;
+    color:white;
+    border: none;
+    border-bottom: 3px solid white;
+     background: transparent; 
+     outline: none;
+}
+
+.form-group2 input[type="submit"]
+{
+	
+	background-color:rgb(216, 211, 211);
+	border: none;
+	outline: none;
+	padding: 6px 30px;
+	width: 115px;
+	color: black;
+	margin-top: 10px;
+	border-radius: 10px 0px 10px 0px;
+}
+.form-group2 input[type="submit"]:hover
+{
+	box-shadow: 10px 0px 20px white;
+	cursor:pointer;
+
+}
+
+#reg3
+{
+    
+	background: transparent;
+	color:white;
+	width: 618px;
+	padding:25px;
+	margin: 130px auto;
+	height: 380px;
+	outline: none;
+	border: none;
+}
+
+
+#background-video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.8);
+	object-fit: cover;
+	z-index: -1;
+  }
+  #di
+  {
+	background: transparent;
+	color:white;
+	width: 618px;
+	padding: 2%;
+	margin: 7px auto;
+	height: 10%;
+	outline: none;
+	border: 2px solid white;
+	text-align: left;
+  }
+  td,th{
+	color: white;
+  }
+  .form-group4 input[type="submit"]
+{
+	
+	background-color:rgb(216, 211, 211);
+	border: none;
+	outline: none;
+	padding: 6px 14px;
+	width: 115px;
+	color: black;
+	margin-top: 10px;
+	border-radius: 10px 0px 10px 0px;
+}
